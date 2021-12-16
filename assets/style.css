@@ -1,0 +1,39 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.score {
+    text-align: left;
+    color: magenta;
+}
+
+.timer {
+    text-align: right;
+}
+.page1 {
+    text-align: center;
+}
+
+.title1 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.intro {
+    padding: 10px 80px;
+}
+
+.btn1 {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn1:hover {
+    background-color: magenta;
+}
