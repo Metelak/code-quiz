@@ -1,7 +1,10 @@
-var startQuizBtn = document.querySelector(".btn1");
+var startQuizBtn = document.querySelector("#start-btn");
+var questionOne = document.querySelector("#question-1");
 
-function startQuiz(){
+function startQuiz() {
+var startQuizBtn = questionOne();
+    // var quiz = questionOne();
+};
+ 
 
-}
-
-startQuizBtn.on("click", function(startQuiz))
+startQuizBtn.addEventListener("click", startQuiz);
