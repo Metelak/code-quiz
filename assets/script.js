@@ -13,6 +13,35 @@ var answerFive = document.getElementById("btn-group-5");
 var correctAnswer = document.querySelector(".correct");
 var wrongAnswer = document.querySelector(".wrong");
 
+var questions = [
+    {
+        title: "Commonly used data types DO NOT include:",
+        choices: ["strings", "booleans", "alerts", "numbers"],
+        answer: "alerts"
+    },
+    {
+        title:  "The condition in an if/else statement is enclosed with ______.",
+        choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
+        answer: "curly brackets"
+    },
+    {
+        title: "Arrays in JavaScript can be used to store ______.",
+        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        answer: "all of the above"
+    },
+    {
+        title: "String values must be enclosed within ______ when being assigned to variables.",
+        choices: ["comas", "curly brackets", "quotes", "parenthesis"],
+        answer: "quotes"
+    },
+    {
+        title: " A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: ["JavaScript", "terminal/bash", "for loops", "console log"],
+        answer: "console log"
+    }
+]
+
+
 startQuizBtn.onclick = function (){
     document.getElementById("quiz-intro").style.display = "none";
     questionOne.style.display = "block";
@@ -21,7 +50,7 @@ startQuizBtn.onclick = function (){
     answerOne.onclick = function (){
         if (correctAnswer){
             alert("Correct!");
-        } else if (wrongAnswer) {
+        } else {
             alert("Wrong!");
         };
         questionOne.style.display = "none";
