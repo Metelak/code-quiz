@@ -34,20 +34,30 @@ body {
     font-size: 20px;
     border: none;
     border-radius: 10px;
+    align-items: center;
 }
 
 #start-btn:hover {
     background-color: magenta;
 }
+
 #question-1 {
-    visibility: hidden;
+    display: none;
+}
+
+#question-2 {
+    display: none;
+}
+
+#question-3 {
+    display: none;
 }
 
 #question {
     text-align: center;
 }
 
-#btn {
+button {
     background-color: blueviolet;
     color: white;
     padding: 5px 10px;
@@ -59,7 +69,6 @@ body {
     display: flex;
     flex: 100%;
 }
-
-#btn:hover {
+button:hover {
     background-color: magenta;
 }
