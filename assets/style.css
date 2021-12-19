@@ -3,14 +3,16 @@ body {
     font-size: 15px;
 }
 
-.score {
+.score a {
     text-align: left;
     color: magenta;
+    text-decoration: none;
 }
 
-.timer {
+#timer {
     text-align: right;
 }
+
 #quiz-intro {
     text-align: center;
 }
