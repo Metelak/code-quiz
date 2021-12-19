@@ -39,6 +39,9 @@ body {
 #start-btn:hover {
     background-color: magenta;
 }
+#question-1 {
+    visibility: hidden;
+}
 
 #question {
     text-align: center;
