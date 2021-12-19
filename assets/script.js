@@ -1,8 +1,9 @@
-var startQuizBtn = document.querySelector("#start-btn");
-var questionOne = document.querySelector("#question-1");
+var startQuizBtn = document.getElementById("#start-btn");
+var questionOne = document.getElementById("#question-1");
 
 function startQuiz() {
-var startQuizBtn = questionOne();
+    var startQuizBtn = alert ("lets test you!")
+// var startQuizBtn = questionOne();
     // var quiz = questionOne();
 };
  
