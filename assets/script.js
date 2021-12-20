@@ -48,19 +48,19 @@ startQuizBtn.onclick = function (){
     };
 
     //  timer begins to tick down (time interval) 
-    // var timeRemaining = 75;
-    // var timerEl = document.getElementById("timer");    
-    // var timerId = setInterval(countdown, 1000);
+    var timeRemaining = 75;
+    var timerEl = document.getElementById("timer");    
+    var timerId = setInterval(countdown, 1000);
  
-    // function countdown() {
-    //     if (timeRemaining == -1) {
-    //         clearTimeout(timerId);
-    //         alert('Game Over!');
-    //       } else {
-    //         timerEl.innerHTML = timeRemaining;
-    //         timeRemaining--;
-    //       }
-    //     }
+    function countdown() {
+        if (timeRemaining == -1) {
+            clearTimeout(timerId);
+            alert('Game Over!');
+          } else {
+            timerEl.innerHTML = timeRemaining;
+            timeRemaining--;
+          }
+        }
 
 
 
