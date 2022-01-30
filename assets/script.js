@@ -1,17 +1,37 @@
+var questionIndex = 0;
+var time = questions.length * 15;
+var timerId;
+
 //  user presses start button and question is presented
 var startQuizBtn = document.getElementById("start-btn");
-var questionOne = document.getElementById("question-1");
-var questionTwo = document.getElementById("question-2");
-var questionThree = document.getElementById("question-3");
-var questionFour = document.getElementById("question-4");
-var questionFive = document.getElementById("question-5");
-var answerOne = document.getElementById("btn-group-1");
-var answerTwo = document.getElementById("btn-group-2");
-var answerThree = document.getElementById("btn-group-3");
-var answerFour = document.getElementById("btn-group-4");
-var answerFive = document.getElementById("btn-group-5");
-var correctAnswer = document.querySelector(".correct");
-var wrongAnswer = document.querySelector(".wrong");
+
+var questions = [
+    {
+        question: "Commonly used data types DO NOT include:",
+        choices: ["strings", "booleans", "alerts", "numbers"],
+        answer: "alerts"
+    },
+    {
+        question: " ",
+        choices: [" ", " ", " ", " "],
+        answer: " "
+    },
+    {
+        question: " ",
+        choices: [" ", " ", " ", " "],
+        answer: " "
+    },
+    {
+        question: " ",
+        choices: [" ", " ", " ", " "],
+        answer: " "
+    },
+    {
+        question: " ",
+        choices: [" ", " ", " ", " "],
+        answer: " "
+    }
+];
 
 startQuizBtn.onclick = function (){
     document.getElementById("quiz-intro").style.display = "none";
