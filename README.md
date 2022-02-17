@@ -1,21 +1,24 @@
 # code-quiz
+
+## **Description:**
 Challenge 4:  creating an interactive quiz game that is clean, polished, and responsive user interface with HTML, CSS, and JS.
 
-This assignment focuses on incorportating html with css and JavaScript. 
+* This assignment focuses on incorportating html with css and JavaScript. 
 
-## link to project:
+## **Link to project:**
 https://metelak.github.io/code-quiz/
 
-## link to GitHub:
+## **Link to GitHub:**
 https://github.com/Metelak/code-quiz
 
-## View of Webpage:
+## **View of Webpage:**
 ![Image 1](https://user-images.githubusercontent.com/94068596/146703243-fe0b50df-35bb-4ca5-abc2-483d57688822.jpg)
 
-## Credits:
+## **Credits:**
 I would love to give a shout out to Claire and Kyler's collaboration. 
 
 * Other sources referenced included: UofM Bootcamp course material, Slack for collaboration with classmates/instructors and AskBSC learning assistants.
+* Shout out to my tutor for helping me learn how to update my code to be dynamic!
 
 ## **License**:
 
