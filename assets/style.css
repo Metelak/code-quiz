@@ -27,6 +27,10 @@ h1 {
     padding: 10px 80px;
 }
 
+.hide {
+    display: none;
+}
+
 #start-btn {
     background-color: blueviolet;
     color: white;
@@ -61,8 +65,4 @@ button {
 
 button:hover {
     background-color: magenta;
-}
-
-.hide {
-    display:none;
 }

@@ -1,13 +1,12 @@
 var questionIndex = 0;
-var time = questions.length * 15;
-var timeEl = document.getElementById("time");
 var timerId;
 // global variables for the DOM elements
 var startQuizBtn = document.getElementById("start-btn");
 var questionsEl = document.getElementById("questions");
 var choicesEl = document.getElementById("choices");
-var initialsEL = document.getElementById("initials");
+var initialsEl = document.getElementById("initials");
 var submitBtn = document.getElementById("submit");
+var timeEl = document.getElementById("time");
 
 var questions = [
     {
@@ -36,13 +35,17 @@ var questions = [
         answer: "console log"
     }
 ];
+
+var time = questions.length * 15;
+
 //  user presses start button and question is presented 
 function startQuiz() {
-    document.getElementById("quiz-intro").style.display = "none";
+    var startEl = document.getElementById("quiz-intro");
+    startEl.setAttribute("class", "hide");
     questionsEl.removeAttribute("class");
 
     timerId = setInterval(countdown, 1000);
-    timerEl.textContent = time;
+    timeEl.textContent = time;
 
     getQuestion();
 };
@@ -76,7 +79,7 @@ function answerQuestion() {
             // avoid negative time/score    
             time = 0;
         }
-        timerEl.textContent = time;
+        timeEl.textContent = time;
         // move to the next question 
         questionIndex++;
         // if out of question in array end the game, else show another question
@@ -102,7 +105,7 @@ function gameEnd() {
 
 function countdown() {
     time--;
-    timerEl.textContent = time;
+    timeEl.textContent = time;
     if (time <= 0) {
         gameEnd();
     }
@@ -131,8 +134,9 @@ function inputEntry(event) {
         submitScore();
     }
 }
-// user enters initials and hits enter key
-initialsEl.onkeyup = inputEntry;
+
+startQuizBtn.onclick = startQuiz;
 // user enters initials and clicks submit button
 submitBtn.onclick = submitScore;
-startQuizBtn.onclick = startQuiz;
+// user enters initials and hits enter key
+initialsEl.onkeyup = inputEntry;
